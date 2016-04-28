@@ -22,7 +22,7 @@
 
           // code for adding user name and signing in
           function newUser(){
-            new_user = prompt('Name yo self');
+            new_user = prompt('What is your name?');
             socket.emit('creating:user', {username: new_user});
           }
 
