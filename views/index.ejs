@@ -14,13 +14,12 @@
      <script type="text/javascript">
 
      $(document).ready(function(){
-          // this triggers the connection event in our server!
+          // this triggers the connection event in the server
           var socket = io.connect();
 
           var new_user;
-          // we'll write all the socket stuff after the above line!
 
-          // code for adding user name and signing in
+          // adding user name and signing in
           function newUser(){
             new_user = prompt('What is your name?');
             socket.emit('creating:user', {username: new_user});

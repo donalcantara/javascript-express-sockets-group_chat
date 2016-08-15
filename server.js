@@ -20,7 +20,6 @@ var server = app.listen(8001, function(){
 var users = {"Jimmy": true};
 var history = [];
 
-// console.log(server);
 var io = require('socket.io').listen(server);
 
 io.sockets.on('connection', function (socket) {
